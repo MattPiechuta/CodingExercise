@@ -1,0 +1,26 @@
+
+
+def multiply(strNumbers):
+  if len(strNumbers) != 0:
+    product = 1
+    for c in strNumbers:
+      if c.isdigit():
+        num = int(c)
+        product = product * num
+        
+    return product
+  else:
+    return 0
+    
+    
+    
+multiply("")
+
+multiply("2 3")
+
+multiply("4,5,6")
+
+multiply("4/6?5.,9")
+
+multiply("100X3")
+
